@@ -1,0 +1,354 @@
+.continerCarDetails {
+  margin-top: 95px;
+}
+
+.MainBoxCarDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.CarDetailsColumn {
+  /* background: red; */
+  width: 70%;
+  display: flex;
+  padding: 0 10px 0 10px;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+.CarImageDetails {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  margin: 20px 0 0 0;
+  border: 1px solid var(--backgroundLight);
+  box-shadow: 0 0 20px 8px var(--backgroundLight);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.CarImageDetails img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* الأزرار */
+.sliderBtn {
+  position: absolute;
+  bottom: -80px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.274);
+  color: white;
+  border: none;
+  /* padding: 10px 10px; */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.sliderBtn.prev {
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sliderBtn.next {
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* الدوائر */
+.dots {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #0dbb61;
+}
+
+.CarTextDetails {
+  padding: 10px;
+  margin-top: 100px;
+  border: 2px solid var(--backgroundLight);
+  box-shadow: 0 0 7px 2px var(--backgroundLight);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  /* display: flex; */
+}
+
+.DetailsCar {
+  display: flex;
+  gap: 10px;
+}
+
+.DetailsClumnLeft,
+.DetailsClumnRight {
+  flex: 1;
+}
+
+.TextDetails {
+  background: var(--backgroundLight);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.TextDetails .Icon {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.TextDetails .Text {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextDetails .Text p,
+.TextDetails .Text h2 {
+  margin: 0;
+}
+
+.TextDetails .Text h2 {
+  font-size: 20px;
+}
+
+/* Start Contact */
+.Contact {
+  flex: 1;
+  /* background: black; */
+  padding: 20px;
+  /* position: fixed;
+  left: 0; */
+}
+.Contact .ContactDetails {
+  border: 1px solid var(--backgroundLight);
+  box-shadow: 0 0 20px 8px var(--backgroundLight);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.Contact .ContactDetails .ContactText,
+.Contact .ContactDetails .ContactNumber {
+  margin-right: 10px;
+}
+
+.Contact .ContactDetails .ContactText h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+.Contact .ContactDetails .ContactText h2 span:nth-child(1) {
+  color: rgba(0, 0, 0, 0.438);
+}
+.Contact .ContactDetails .ContactText h2 span:nth-child(2) {
+  color: var(--MainColor);
+}
+
+.Contact .ContactDetails .ContactNumber button {
+  margin: 0 0 10px 0;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  color: white;
+  background: var(--MainColor);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.Contact .ContactDetails .ContactNumber button:hover {
+  background: transparent;
+  color: var(--MainColor);
+  border: 1px solid var(--MainColor);
+  box-shadow: 0 0 5px 2px var(--MainColor);
+}
+
+/* End Contact */
+
+/* Start Similarcars */
+.Similarcars h2 {
+  margin: 20px 20px 0 0;
+}
+
+.Similarcars .MainBoxSimilarcars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 20px 20px 20px 0;
+  margin: 20px 0 0 0;
+  gap: 25px;
+  /* background: black; */
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.Similarcars .MainBoxSimilarcars::-webkit-scrollbar {
+  display: none;
+}
+
+.Similarcars .MainBoxSimilarcars a {
+  color: black;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType {
+  /*background: red;*/
+  border: 2px solid var(--backgroundLight);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  box-shadow: 0 0 7px 2px var(--backgroundLight);
+  width: 280px;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType img {
+  width: 280px;
+  height: 140px;
+  background: white;
+  object-fit: cover;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType {
+  margin: 0 10px 0 10px;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType h2,
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType h3,
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType p {
+  margin: 0;
+  padding: 0;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType h2 {
+  color: var(--MainColor);
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType h3 {
+  color: rgba(0, 0, 0, 0.534);
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.Similarcars .MainBoxSimilarcars .CardCarByType .DitalsByType .mileageAndPrice {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+/* Start Similarcars */
+
+/* Start media */
+@media (max-width: 1024px) {
+  .MainBoxCarDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .CarDetailsColumn {
+    width: 90%;
+  }
+  .Contact {
+    width: 90%;
+  }
+  .Similarcars .MainBoxSimilarcars {
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+}
+@media (max-width: 780px) {
+  .DetailsCar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .CarDetailsColumn {
+    width: 90%;
+  }
+  .Contact {
+    width: 90%;
+  }
+  .Similarcars .MainBoxSimilarcars {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+}
+
+/* End media */

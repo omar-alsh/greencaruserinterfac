@@ -1,0 +1,241 @@
+.BoxMainFooter {
+  background: var(--backgroundLight);
+  height: 100%;
+}
+.BoxMainFooter hr {
+  background: black;
+  height: 1px;
+  border: none;
+}
+.BoxMainFooter .TextTitelFooter {
+  color: var(--MainColor);
+  /* background: red; */
+  margin: 20px 20px 0 0;
+  padding: 20px 0;
+}
+
+.BoxMainFooter .TextTitelFooter h2,
+.BoxMainFooter .TextTitelFooter p {
+  margin: 5px 0 5px 0;
+}
+
+.BoxMainFooter .TextTitelFooter h2 {
+  font-size: 30px;
+}
+
+.BoxMainFooter .TextTitelFooter p {
+  font-size: 25px;
+}
+
+.BoxMainFooter .bodyFooter {
+  display: flex;
+  justify-content: space-around;
+  /* flex: auto; */
+  gap: 100px;
+  color: var(--MainColor);
+  /* background: red; */
+  /* width: 100%; */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.BoxMainFooter .bodyFooter .box-right,
+.BoxMainFooter .bodyFooter .box-center,
+.BoxMainFooter .bodyFooter .box-left {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BoxMainFooter .bodyFooter .box-right {
+  /* background: black; */
+  justify-content: start;
+  align-items: start;
+}
+
+.BoxMainFooter .bodyFooter .box-right img {
+  width: 180px;
+}
+.BoxMainFooter .bodyFooter .box-right p {
+  margin: 0 10px 0 0;
+}
+
+.BoxMainFooter .bodyFooter .box-center {
+  /* background: blue; */
+  justify-content: start;
+  align-items: start;
+}
+
+.BoxMainFooter .bodyFooter .box-center h3,
+.BoxMainFooter .bodyFooter .box-left h3 {
+  margin: 20px 20px 0 0;
+}
+
+.BoxMainFooter .bodyFooter .box-center ul,
+.BoxMainFooter .bodyFooter .box-left ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding-right: 20px;
+}
+
+.BoxMainFooter .bodyFooter .box-center ul li a,
+.BoxMainFooter .bodyFooter .box-left ul li a {
+  text-decoration: none;
+  color: var(--MainColor);
+}
+
+.BoxMainFooter .TextEndFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--MainColor);
+  margin: 0 20px 0 20px;
+}
+
+.BoxMainFooter .TextEndFooter div p {
+  margin: 0px 0 0 0;
+}
+
+.BoxMainFooter .TextEndFooter div:nth-child(2) {
+  margin: 10px 0 0 0;
+}
+
+.BoxMainFooter .TextEndFooter div:nth-child(2) p {
+  /* margin: 10px 0 0 0 ; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socil .IconSocil {
+  display: flex;
+  /* flex-direction: row; */
+  margin-top: 10px;
+}
+
+.socil .IconSocil div a {
+  font-size: 25px;
+  margin-left: 7px;
+  padding: 2px;
+  border: 1px solid var(--MainColor);
+  display: flex;
+  color: var(--MainColor);
+  box-shadow: 0 0 6px 5px var(--backgroundLight);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.socil .IconSocil {
+  /* border-bottom: 2px solid var(--MainColor); */
+  padding: 0 0 20px 0;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ======== Media Query: أقل من 1024px ======== */
+@media (max-width: 1024px) {
+  .BoxMainFooter .bodyFooter {
+    flex-direction: row;
+    gap: 50px; /* تقليل المسافة بين الـ boxes */
+    flex-wrap: wrap; /* السماح بالانحناء إذا لم يكفي العرض */
+    justify-content: center;
+  }
+
+  .BoxMainFooter .bodyFooter .box-right,
+  .BoxMainFooter .bodyFooter .box-center,
+  .BoxMainFooter .bodyFooter .box-left {
+    width: 250px; /* تقليل العرض قليلاً */
+  }
+
+  .BoxMainFooter .TextTitelFooter h2 {
+    font-size: 28px;
+  }
+
+  .BoxMainFooter .TextTitelFooter p {
+    font-size: 22px;
+  }
+}
+
+/* ======== Media Query: أقل من 780px ======== */
+@media (max-width: 780px) {
+  .BoxMainFooter .bodyFooter {
+    flex-direction: column; /* ترتيب عمودي */
+    align-items: center;
+    gap: 30px;
+    padding: 10px 0;
+  }
+
+  .BoxMainFooter .bodyFooter .box-right,
+  .BoxMainFooter .bodyFooter .box-center,
+  .BoxMainFooter .bodyFooter .box-left {
+    width: 100%; /* يشغل كامل عرض الشاشة تقريباً */
+    max-width: 300px; /* الحد الأقصى للعرض */
+    align-items: center;
+    text-align: center;
+  }
+
+  .BoxMainFooter .bodyFooter .box-right img {
+    width: 150px;
+  }
+
+  .BoxMainFooter .TextTitelFooter h2 {
+    font-size: 26px;
+  }
+
+  .BoxMainFooter .TextTitelFooter p {
+    font-size: 20px;
+  }
+
+  .BoxMainFooter .TextEndFooter {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ======== Media Query: أقل من 600px ======== */
+@media (max-width: 600px) {
+  .BoxMainFooter .bodyFooter {
+    gap: 20px;
+    padding: 5px 0;
+  }
+
+  .BoxMainFooter .bodyFooter .box-right,
+  .BoxMainFooter .bodyFooter .box-center,
+  .BoxMainFooter .bodyFooter .box-left {
+    width: 90%; /* تقريبًا يغطي عرض الشاشة */
+  }
+
+  .BoxMainFooter .bodyFooter .box-right img {
+    width: 120px; /* تصغير الصورة */
+  }
+
+  .BoxMainFooter .TextTitelFooter h2 {
+    font-size: 22px;
+  }
+
+  .BoxMainFooter .TextTitelFooter p {
+    font-size: 18px;
+  }
+
+  .BoxMainFooter .TextEndFooter {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .socil .IconSocil div a {
+    font-size: 20px; /* تصغير أيقونات السوشيال */
+    padding: 1px;
+    margin-left: 5px;
+  }
+}

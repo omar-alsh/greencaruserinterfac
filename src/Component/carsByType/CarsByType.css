@@ -1,0 +1,234 @@
+.continerCarsByType {
+  /* background: black; */
+  margin-top: 61px;
+}
+
+.Titlecomponent {
+  background: var(--backgroundLight);
+  padding: 10px 20px 10px 0;
+  box-shadow: 0 0 12px 3px var(--MainColor);
+}
+
+.Titlecomponent h2,
+.Titlecomponent h3,
+.Titlecomponent p {
+  margin: 0;
+}
+
+.Titlecomponent h2 {
+  margin: 20px 0 0 0;
+  font-size: 25px;
+}
+.Titlecomponent h3 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+.Titlecomponent p {
+  color: var(--MainColor);
+  font-weight: bold;
+}
+
+.bodyCarsByType {
+  display: flex;
+}
+
+/* Start SidBar */
+.SideBar {
+  /* background: black; */
+  width: 30%;
+  height: 100vh;
+  margin: 0 0 0 0;
+}
+.SideBar .ImageOne,
+.SideBar .ImageTow {
+  margin: 0 20px 0 20px;
+}
+
+.SideBar .ImageOne p,
+.SideBar .ImageTow p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.SideBar .ImageOne p span,
+.SideBar .ImageTow p span {
+  color: var(--MainColor);
+}
+
+.SideBar .ImageOne img,
+.SideBar .ImageTow img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+/* End SidBar */
+
+/* Strat  ShowCarByType*/
+.ShowCarByType {
+  /* background: red; */
+  flex: 1;
+  margin: 0 0px 0 0;
+}
+
+.ShowCarByType .GridCarByType {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 20px 20px 0;
+  margin: 20px 20px 0 0;
+  gap: 25px;
+  /* background: black; */
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.ShowCarByType .GridCarByType::-webkit-scrollbar {
+  display: none;
+}
+
+.ShowCarByType .GridCarByType a {
+  color: black;
+}
+.ShowCarByType .GridCarByType .CardCarByType {
+  /*background: red;*/
+  border: 2px solid var(--backgroundLight);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  box-shadow: 0 0 7px 2px var(--backgroundLight);
+  width: 280px;
+}
+
+.ShowCarByType .GridCarByType .CardCarByType:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.ShowCarByType .GridCarByType .CardCarByType img {
+  width: 280px;
+  height: 140px;
+  background: white;
+  object-fit: cover;
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType {
+  margin: 0 10px 0 10px;
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType h2,
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType h3,
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType p {
+  margin: 0;
+  padding: 0;
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType h2 {
+  color: var(--MainColor);
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType h3 {
+  color: rgba(0, 0, 0, 0.534);
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType p {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.ShowCarByType .GridCarByType .CardCarByType .DitalsByType .mileageAndPrice {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+/* End ShowCarByType */
+
+/* medai Start */
+
+@media (min-width: 1070px) {
+  .SideBar {
+    width: 25%;
+  }
+  .SideBar .ImageOne img,
+  .SideBar .ImageTow img {
+    /* width: 200px; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .ShowCarByType .GridCarByType {
+    justify-content: center;
+    margin: 20px 0px 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .SideBar {
+    width: 33%;
+    /* background: red; */
+  }
+  .SideBar .ImageOne img,
+  .SideBar .ImageTow img {
+    width: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .ShowCarByType .GridCarByType {
+    justify-content: center;
+    padding-right: 0;
+    /* margin-left: 10px; */
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .SideBar {
+    width: 25%;
+    /* background: red; */
+  }
+  .SideBar .ImageOne img,
+  .SideBar .ImageTow img {
+    width: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .ShowCarByType .GridCarByType {
+    justify-content: center;
+    /* padding-right: 0; */
+    /* margin-right: 0; */
+  }
+}
+
+@media (max-width: 600px) {
+  .SideBar {
+    display: none;
+  }
+}
+/* medai end */

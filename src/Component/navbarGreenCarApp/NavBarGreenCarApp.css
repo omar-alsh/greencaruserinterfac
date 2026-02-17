@@ -1,0 +1,248 @@
+
+.continerNavBar {
+  position: fixed;
+  background: white;
+  z-index: 900;
+}
+
+.MainNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid rgba(172, 168, 168, 0.603);
+}
+
+.MainNavBar .LogogNavBar img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.MainNavBar .TagNavBar {
+  margin-left: 130px;
+}
+
+.MainNavBar .TagNavBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  flex-wrap: nowrap;
+  margin: 0px 0px;
+  padding: 0px;
+  gap: 60px;
+}
+
+.MainNavBar .TagNavBar ul li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.MainNavBar .TagNavBar ul li:hover {
+  background: var(--backgroundLight);
+}
+
+.MainNavBar .TagNavBar ul a {
+  color: black;
+  text-decoration: none;
+}
+
+.Bergar {
+  display: none;
+}
+
+/* Start Showtag */
+.tagsTow {
+  position: fixed; /* تجعلها فوق المحتوى */
+  top: 85px; /* تبدأ تحت الـ Navbar مثلاً */
+  right: 0; /* تظهر من جهة اليمين */
+  width: 30%;
+  height: auto; /* لا تأخذ طول الشاشة بالكامل */
+  background: var(--ColorTow);
+  overflow: hidden;
+  z-index: 1000; /* فوق بقية العناصر */
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #56eb874f, #6fc697);
+  height: 100vh;
+}
+
+.divClosTags {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+.Closeicon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* أنميشن الفتح */
+.animateShow {
+  animation: ShowTags 1s ease forwards;
+  -webkit-animation: ShowTags 1s ease forwards;
+}
+
+/* أنميشن الإغلاق */
+.animateHide {
+  animation: HiddinTags 1s ease forwards;
+  -webkit-animation: HiddinTags 1s ease forwards;
+}
+
+@keyframes ShowTags {
+  from {
+    transform: translateX(380px);
+    -webkit-transform: translateX(380px);
+    -moz-transform: translateX(380px);
+    -ms-transform: translateX(380px);
+    -o-transform: translateX(380px);
+}
+  to {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+}
+
+@keyframes HiddinTags {
+  from {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+  to {
+    transform: translateX(380px);
+    -webkit-transform: translateX(380px);
+    -moz-transform: translateX(380px);
+    -ms-transform: translateX(380px);
+    -o-transform: translateX(380px);
+}
+}
+
+.TagNavBarTow {
+  margin-top: 20px;
+}
+
+.TagNavBarTow ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  flex-wrap: nowrap;
+  margin: 0px 0px;
+  padding: 0px;
+  gap: 10px;
+}
+
+.TagNavBarTow ul li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.TagNavBarTow ul li:hover {
+  background: var(--backgroundLight);
+}
+
+.TagNavBarTow ul a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .MainNavBar {
+    flex-direction: row-reverse;
+  }
+  .MainNavBar .TagNavBar {
+    display: none;
+  }
+  .MainNavBar .LogogNavBar img {
+    margin-left: 20px;
+    width: 150px;
+  }
+  .MainNavBar .Bergar {
+    display: block;
+    margin-right: 20px;
+    font-size: 40px;
+    display: flex;
+    color: var(--secondarecolor);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagsTow {
+    height: 30%;
+    width: 50%;
+  }
+  @keyframes ShowTags {
+    from {
+      transform: translatey(-400px);
+      -webkit-transform: translatey(-400px);
+      -moz-transform: translatey(-400px);
+      -ms-transform: translatey(-400px);
+      -o-transform: translatey(-400px);
+    }
+    to {
+      transform: translatey(0px);
+      -webkit-transform: translatey(0px);
+      -moz-transform: translatey(0px);
+      -ms-transform: translatey(0px);
+      -o-transform: translatey(0px);
+    }
+  }
+
+  @keyframes HiddinTags {
+    from {
+      transform: translatey(0px);
+      -webkit-transform: translatey(0px);
+      -moz-transform: translatey(0px);
+      -ms-transform: translatey(0px);
+      -o-transform: translatey(0px);
+    }
+    to {
+      transform: translatey(-400px);
+      -webkit-transform: translatey(-400px);
+      -moz-transform: translatey(-400px);
+      -ms-transform: translatey(-400px);
+      -o-transform: translatey(-400px);
+    }
+  }
+}
+/* End ShowTag */
