@@ -18,7 +18,9 @@ export default function CarPartsStores() {
   
     useEffect(() => {
       axios
-        .get("http://localhost:5000/api/service-centers/auto-parts-stores")
+        .get(
+          "https://backend-greencar.onrender.com/api/service-centers/auto-parts-stores"
+        )
         .then((res) => setPartsStores(res.data.data))
         .catch(() => setPartsStores([]));
     }, []);

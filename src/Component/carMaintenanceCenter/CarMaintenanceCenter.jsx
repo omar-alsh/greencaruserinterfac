@@ -12,7 +12,9 @@ export default function CarMaintenanceCenter() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/service-centers/auto-repair-centers")
+      .get(
+        "https://backend-greencar.onrender.com/api/service-centers/auto-repair-centers"
+      )
       .then((res) => setMaintenanceCenter(res.data.data))
       .catch(() => setMaintenanceCenter([]));
   }, []);

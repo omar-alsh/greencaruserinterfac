@@ -14,7 +14,9 @@ export default function CarsByType() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/cars/category/${slug}/${type}`)
+      .get(
+        `https://backend-greencar.onrender.com/api/cars/category/${slug}/${type}`
+      )
       .then((res) => setCars(res.data))
       .catch(() => setCars([]));
   }, [slug, type]);

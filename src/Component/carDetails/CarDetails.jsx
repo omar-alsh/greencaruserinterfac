@@ -44,7 +44,7 @@ export default function CarDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/cars/${id}`)
+      .get(`https://backend-greencar.onrender.com/api/cars/${id}`)
       .then((res) => {
         setCar(res.data);
         setImages(res.data.images || []);
@@ -56,7 +56,9 @@ export default function CarDetails() {
   useEffect(() => {
     if (!car) return;
     axios
-      .get(`http://localhost:5000/api/cars/category/${car.brand}/${car.model}`)
+      .get(
+        `https://backend-greencar.onrender.com/api/cars/category/${car.brand}/${car.model}`
+      )
       .then((res) => setCars(res.data))
       .catch(() => setCars([]));
   }, [car]);
