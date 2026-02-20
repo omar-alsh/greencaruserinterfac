@@ -1,5 +1,5 @@
 import "./NavBarGreenCarApp.css";
-import logo from "../../../public/green-car-logo.png";
+import logo from "/green-car-logo.png";
 
 // start Icon
 import { IoReorderThree } from "react-icons/io5";

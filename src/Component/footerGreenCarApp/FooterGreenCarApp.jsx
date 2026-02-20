@@ -21,7 +21,7 @@ export default function FooterGreenCarApp() {
           <hr />
           <div className="bodyFooter">
             <div className="box-right">
-              <img src="../../../public/green-car-logo.png"></img>
+              <img src="/green-car-logo.png"></img>
               <p>
                 GreenCar دليلك الاول في سوريا الذي تجد فيه اكبر تشكيلة من
                 السيارات الحديثة{" "}
