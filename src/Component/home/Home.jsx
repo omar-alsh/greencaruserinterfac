@@ -22,7 +22,7 @@ export default function Home() {
     try {
       setSelectedSlug(slug);
       const res = await axios.get(
-        `https://backend-greencar.onrender.com/categories/${slug}`
+        `https://backend-greencar.onrender.com/api/categories/${slug}`
       );
       setTypes(res.data);
       // eslint-disable-next-line no-unused-vars
@@ -37,7 +37,7 @@ export default function Home() {
   // جلب الماركات (slugs)
   useEffect(() => {
     axios
-      .get("https://backend-greencar.onrender.com/categories/slugs")
+      .get("https://backend-greencar.onrender.com/api/categories/slugs")
       .then((res) => {
         setCategoryHome(res.data);
 
