@@ -66,9 +66,9 @@ export default function NavBarGreenCarApp() {
               <Link to="/" onClick={closeTags}>
                 <li>الرئيسية</li>
               </Link>
-              <Link onClick={closeTags}>
+              <HashLink smoothe to="/#Services">
                 <li>الخدمات</li>
-              </Link>
+              </HashLink>
               <Link to="conatct" onClick={closeTags}>
                 <li>تواصل معنا</li>
               </Link>
