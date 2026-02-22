@@ -7,7 +7,6 @@ import { GrClose } from "react-icons/gr";
 // End Icon
 import { HashLink } from "react-router-hash-link";
 
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -64,13 +63,13 @@ export default function NavBarGreenCarApp() {
           <div className="TagNavBarTow">
             <ul>
               <HashLink smoothe to="/#hero" onClick={closeTags}>
-                <li>الرئيسية</li>
+                <li style={{ color: "white" }}>الرئيسية</li>
               </HashLink>
               <HashLink smoothe to="/#Services" onClick={closeTags}>
-                <li>الخدمات</li>
+                <li style={{ color: "white" }}>الخدمات</li>
               </HashLink>
               <HashLink smooth to="conatct#Contact" onClick={closeTags}>
-                <li>تواصل معنا</li> 
+                <li style={{ color: "white" }}>تواصل معنا</li>
               </HashLink>
             </ul>
           </div>
