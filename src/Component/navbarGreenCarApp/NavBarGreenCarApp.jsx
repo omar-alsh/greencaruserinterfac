@@ -63,15 +63,15 @@ export default function NavBarGreenCarApp() {
           </div>
           <div className="TagNavBarTow">
             <ul>
-              <Link to="/" onClick={closeTags}>
+              <HashLink smoothe to="/#hero" onClick={closeTags}>
                 <li>الرئيسية</li>
-              </Link>
-              <HashLink smoothe to="/#Services">
+              </HashLink>
+              <HashLink smoothe to="/#Services" onClick={closeTags}>
                 <li>الخدمات</li>
               </HashLink>
-              <Link to="conatct" onClick={closeTags}>
-                <li>تواصل معنا</li>
-              </Link>
+              <HashLink smooth to="conatct#Contact" onClick={closeTags}>
+                <li>تواصل معنا</li> 
+              </HashLink>
             </ul>
           </div>
         </div>
